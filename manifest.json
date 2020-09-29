@@ -11,8 +11,8 @@
   "permissions": [
     "http://*/", "https://*/"
     ],
-	"web_accessible_resources": [
-    "content_script.js",
+  "web_accessible_resources": [
+        "content_script.js",
 	"main.js",
 	"simple.wasm"
    ],
