@@ -1,4 +1,4 @@
-# Extension-with-WASM
+# Extension with WASM
 A basic Chrome extension using a simple WASM file. This extension writes 42 on your browser's console whenever its icon is clicked.
 
 # Use
