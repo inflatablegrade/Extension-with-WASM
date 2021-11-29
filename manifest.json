@@ -1,22 +1,18 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "WASM Sample",
   "version": "1.3",
   "description": "A basic Chrome extension using a simple WASM file.",
   "icons": { "128": "icon_128.png" },
-    "background": {
-    "persistent": false,
-    "scripts": ["main.js"]
+  "background": {
+    "service_worker": "main.js"
   },
-  "permissions": [
-    "http://*/", "https://*/"
-    ],
-  "web_accessible_resources": [
-        "content_script.js",
-	"main.js",
-	"simple.wasm"
-   ],
-  "browser_action": {	
+  "permissions": ["tabs", "activeTab", "scripting"],
+	"web_accessible_resources": [{
+	"resources": ["simple.wasm"],
+	"matches": ["<all_urls>"]
+	}],
+  "action": {	
     "default_icon":  {
 	"19": "icon_19.png"
 	},
