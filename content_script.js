@@ -8,10 +8,11 @@
   
   var response = null;
   var bytes = null;
-  var results = null;
-  
+  var results = null;  
   
   var wasmPath = chrome.runtime.getURL("simple.wasm");
+//console.log("myPath: " + wasmPath);
+  
   fetch(wasmPath).then(response =>
 	response.arrayBuffer()
 	).then(bytes =>
